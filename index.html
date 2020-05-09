@@ -1,0 +1,1885 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <![endif]-->
+    <title>Airi - Clean, Minimal eCommerce Bootstrap 4 Template</title>
+    <link rel="dns-prefetch" href="http://fonts.googleapis.com/">
+    <link rel="dns-prefetch" href="http://s.w.org/">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300italic,regular,italic,700,700italic%7CPlayfair+Display:regular,italic,700,700italic" rel="stylesheet"/>
+    <style type="text/css">
+
+        .clearfix::before,
+        .clearfix::after {
+            content: ' ';
+            display: table;
+            flex-basis: 0;
+            order: 1;
+        }
+
+        .clearfix::after{
+            clear: both;
+        }
+
+        html {
+            font-family: sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%
+        }
+
+        body {
+            margin: 0
+        }
+
+        article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+            display: block
+        }
+
+        audio, canvas, progress, video {
+            display: inline-block;
+            vertical-align: baseline
+        }
+
+        audio:not([controls]) {
+            display: none;
+            height: 0
+        }
+
+        [hidden], template {
+            display: none
+        }
+
+        a {
+            background-color: transparent
+        }
+
+        a:active, a:hover {
+            outline: 0
+        }
+
+        abbr[title] {
+            border-bottom: 1px dotted
+        }
+
+        b, strong {
+            font-weight: 700
+        }
+
+        dfn {
+            font-style: italic
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: .67em 0
+        }
+
+        mark {
+            background: #ff0;
+            color: #000
+        }
+
+        small {
+            font-size: 80%
+        }
+
+        sub, sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline
+        }
+
+        sup {
+            top: -.5em
+        }
+
+        sub {
+            bottom: -.25em
+        }
+
+        img {
+            border: 0;
+            max-width: 100%;
+            height: auto;
+            display: inline-block;
+        }
+
+        svg:not(:root) {
+            overflow: hidden
+        }
+
+        figure {
+            margin: 1em 40px
+        }
+        figcaption{
+            color: #262626;
+        }
+
+        hr {
+            box-sizing: content-box;
+            height: 0
+        }
+
+        pre {
+            overflow: auto
+        }
+
+        code, kbd, pre, samp {
+            font-family: monospace, monospace;
+            font-size: 1em
+        }
+
+        button, input, optgroup, select, textarea {
+            color: inherit;
+            font: inherit;
+            margin: 0
+        }
+
+        button {
+            overflow: visible
+        }
+
+        button, select {
+            text-transform: none
+        }
+
+        button, html input[type="button"], input[type="reset"], input[type="submit"] {
+            -webkit-appearance: button;
+            cursor: pointer
+        }
+
+        button[disabled], html input[disabled] {
+            cursor: default
+        }
+
+        button::-moz-focus-inner, input::-moz-focus-inner {
+            border: 0;
+            padding: 0
+        }
+
+        input {
+            line-height: normal
+        }
+
+        input[type="checkbox"], input[type="radio"] {
+            box-sizing: border-box;
+            padding: 0
+        }
+
+        input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+            height: auto
+        }
+
+        input[type="search"] {
+            -webkit-appearance: textfield;
+            box-sizing: content-box
+        }
+
+        input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        fieldset {
+            border: 1px solid silver;
+            margin: 0 2px;
+            padding: .35em .625em .75em
+        }
+
+        legend {
+            border: 0;
+            padding: 0
+        }
+
+        textarea {
+            overflow: auto
+        }
+
+        optgroup {
+            font-weight: 700
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+        td, th {
+            padding: 0
+        }
+
+        .hidden, [hidden] {
+            display: none !important
+        }
+
+        .pure-img {
+            max-width: 100%;
+            height: auto;
+            display: block
+        }
+
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+        :before, :after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 100%, 0)
+            }
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0)
+            }
+        }
+
+        .fadeInUp {
+            animation-name: fadeInUp
+        }
+
+        .la-image-loading {
+            opacity: 0;
+            position: fixed;
+            z-index: 999999;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: #fff;
+            overflow: hidden;
+            transition: all .3s ease-in-out;
+            -webkit-transition: all .3s ease-in-out;
+            visibility: hidden
+        }
+
+        .la-image-loading .content {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            left: 50%;
+            margin-left: -25px;
+            margin-top: -25px
+        }
+
+        .la-loader.spinner5 {
+            margin: 5px;
+            width: 40px;
+            height: 40px
+        }
+
+        .la-loader.spinner5 div {
+            width: 33%;
+            height: 33%;
+            float: left;
+            -webkit-animation: la-cubeGridScaleDelay 1.3s infinite ease-in-out;
+            animation: la-cubeGridScaleDelay 1.3s infinite ease-in-out;
+            background-color: #f2504b
+        }
+
+        @-webkit-keyframes la-cubeGridScaleDelay {
+            0% {
+                -webkit-transform: scale3d(1, 1, 1)
+            }
+            35% {
+                -webkit-transform: scale3d(0, 0, 1)
+            }
+            70% {
+                -webkit-transform: scale3d(1, 1, 1)
+            }
+            100% {
+                -webkit-transform: scale3d(1, 1, 1)
+            }
+        }
+
+        @keyframes la-cubeGridScaleDelay {
+            0% {
+                transform: scale3d(1, 1, 1)
+            }
+            35% {
+                transform: scale3d(0, 0, 1)
+            }
+            70% {
+                transform: scale3d(1, 1, 1)
+            }
+            100% {
+                transform: scale3d(1, 1, 1)
+            }
+        }
+
+        .la-loader.spinner5 div:nth-child(1), .la-loader.spinner5 div:nth-child(5), .la-loader.spinner5 div:nth-child(9) {
+            -webkit-animation-delay: .2s;
+            animation-delay: .2s
+        }
+
+        .la-loader.spinner5 div:nth-child(2), .la-loader.spinner5 div:nth-child(6) {
+            -webkit-animation-delay: .3s;
+            animation-delay: .3s
+        }
+
+        .la-loader.spinner5 div:nth-child(3) {
+            -webkit-animation-delay: .4s;
+            animation-delay: .4s
+        }
+
+        .la-loader.spinner5 div:nth-child(4), .la-loader.spinner5 div:nth-child(8) {
+            -webkit-animation-delay: .1s;
+            animation-delay: .1s
+        }
+
+        .la-loader.spinner5 div:nth-child(7) {
+            -webkit-animation-delay: 0s;
+            animation-delay: 0s
+        }
+
+        .container {
+            padding-left: 60px;
+            padding-right: 60px;
+            max-width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            width: 1920px
+        }
+
+        @media(min-width: 1500px){
+            .container {
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+        }
+
+        .row:before, .row:after {
+            content: ' ';
+            display: table;
+            flex-basis: 0;
+            order: 1
+        }
+
+        .row:after {
+            clear: both
+        }
+
+        body {
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;;
+            line-height: 24px;
+            line-height: 1.7142;
+            font-weight: 400;
+            color: #262626
+        }
+        .three-font-family{
+            font-family: 'Playfair Display', serif;
+        }
+
+        #page.site {
+            opacity: 1
+        }
+
+        .site-loading #page.site {
+            opacity: 0;
+            transition: all .3s ease-in-out
+        }
+
+        .site-loading .la-image-loading {
+            opacity: 1;
+            visibility: visible
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none
+        }
+
+        a:hover {
+            color: #f2504b
+        }
+
+        h2 {
+            font-weight: 400;
+            color: #1B1B1B;
+            font-size: 42px;
+            margin: 0;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+        }
+
+        h3 {
+            font-size: 20px;
+            margin: 0;
+            text-align: center;
+        }
+
+        header + p {
+            text-align: center;
+            padding-bottom: 30px;
+            width: 510px;
+            max-width: 100%;
+            margin: 0 auto;
+            padding-top: 10px;
+        }
+
+        header + p + p a {
+            text-decoration: underline;
+        }
+
+        .small-container {
+            margin: 0 auto;
+            display: block
+        }
+
+        header#masthead {
+            position: relative;
+            overflow: hidden;
+        }
+
+        header#masthead .container {
+            min-height: 850px;
+            background-image: url(images/bg-01.png);
+            background-color: #F2F2F2;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: 57% 23%;
+        }
+
+        .header-main {
+            position: relative;
+            width: 1170px;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .site-header h1 {
+            font-size: 32px;
+            font-weight: 400;
+            letter-spacing: -1px;
+            margin: 0;
+            width: 380px;
+            text-align: left;
+            line-height: normal;
+            position: absolute;
+            top: 44%;
+            left: 20%
+        }
+
+        .site-branding {
+            padding-top: 80px;
+            text-align: center;
+        }
+
+        .site-branding figure {
+            margin: 0;
+            position: relative
+        }
+
+        .site-branding figure img {
+            width: 228px;
+        }
+
+        .site-branding a {
+            display: inline-block;
+            position: relative;
+        }
+
+        .site-branding figcaption{
+            font-size: 22px;
+            padding-top: 20px;
+        }
+
+        .site-main-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+
+        .site-main-nav ul li {
+            display: inline-block;
+            padding: 45px 15px;
+            transition: all .3s;
+        }
+        .site-main-nav li:hover a,
+        .site-main-nav .active a {
+            color: #D25B5B;
+        }
+        .site-main-nav a {
+            display: inline-block;
+            color: #262626;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 70px;
+            transition: all .3s;
+        }
+
+        .header__bg__wrap {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 62%;
+            right: 0;
+        }
+
+        .header__bg{
+            background-size: 100% auto;
+            background-position: center top;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 31.25%;
+            bottom: 0;
+            height: 100%;
+        }
+
+        .header__bg-1{
+            background-image: url(images/info-1.jpg);
+        }
+        .header__bg-2{
+            background-image: url(images/info-2.jpg);
+            left: 31.25%;
+            height: 77%;
+            width: 29%;
+        }
+        .header__bg-3{
+            background-image: url(images/info-3.jpg);
+            width: 23%;
+            left: 56%;
+            height: 65%;
+        }
+        .header__bg-4{
+            background-image: url(images/info-4.jpg);
+            right: 2%;
+            height: 50%;
+            z-index: 2;
+        }
+        .header__bg-5{
+            background-image: url(images/info-5.jpg);
+            right: -8%;
+        }
+
+        .grid-2, .grid-3, .grid-4 {
+            text-rendering: optimizespeed;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            -webkit-align-content: flex-start;
+            -ms-flex-line-pack: start;
+            align-content: flex-start
+        }
+
+        .grid-4 .demo-item {
+            display: inline-block;
+            zoom: 1;
+            letter-spacing: normal;
+            word-spacing: normal;
+            vertical-align: top;
+            text-rendering: auto;
+            width: 25%
+        }
+
+        .grid-3 .demo-item {
+            display: inline-block;
+            zoom: 1;
+            letter-spacing: normal;
+            word-spacing: normal;
+            vertical-align: top;
+            text-rendering: auto;
+            width: 33.3333%
+        }
+
+        .grid-2 .demo-item {
+            display: inline-block;
+            zoom: 1;
+            letter-spacing: normal;
+            word-spacing: normal;
+            vertical-align: top;
+            text-rendering: auto;
+            width: 50%
+        }
+
+        .grid-2 .item-inner:not([data-element-loaded="true"]),
+        .grid-3 .item-inner:not([data-element-loaded="true"]),
+        .grid-4 .item-inner:not([data-element-loaded="true"]) {
+            background-image: url(images/ajax-loader.gif) !important;
+            background-position: center center !important;
+            background-repeat: no-repeat !important;
+            background-size: auto !important;
+            background-color: rgba(201, 201, 202, 0.14)
+        }
+
+        .demo-item {
+            font-size: 18px;
+            padding: 15px;
+            text-align: center;
+            animation-name: fadeInUp;
+        }
+
+        .demo-item .item-inner {
+            position: relative;
+            display: block;
+            padding-bottom: 84.2%;
+            background-position: center top;
+            background-size: cover;
+            background-color: #D8D8D8;
+            box-shadow: 0 2px 32px 0 rgba(0,0,0,0.03);
+        }
+
+        .demo-item a {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            color: #fff
+        }
+
+        .demo-item a:before {
+            content: "";
+            background: #232324;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 250ms ease-out;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0
+        }
+
+        .demo-item a span {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -5%;
+            width: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .3s
+        }
+
+        .demo-item a span:after {
+            content: "";
+            width: 54px;
+            height: 54px;
+            display: block;
+            margin: 25px auto 0;
+            background: #D25B5B url(images/tail-right.png) no-repeat center center;
+            transition: all .3s
+        }
+
+        .demo-item a span:hover:after {
+            background-color: #D25B5B
+        }
+
+        .demo-item h3 {
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 25px;
+            color: #262626;
+            margin-bottom: 20px;
+        }
+
+        .demo-item .item-inner h3 {
+            display: none
+        }
+
+        .demo-item:hover a:before {
+            opacity: .5;
+            visibility: visible
+        }
+
+        .demo-item:hover a span {
+            margin-top: -10%;
+            opacity: 1;
+            visibility: visible
+        }
+
+        .margin-top-50 {
+            margin-top: 50px;
+        }
+
+        #demo {
+            margin-top: 70px
+        }
+        #demo .small-container {
+            padding-bottom: 30px;
+        }
+
+        #demo header + p{
+            width: 660px;
+        }
+
+        #demo .small-container h3{
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        #inner_pages,
+        #blog_pages,
+        #product_pages,
+        #shop_pages {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        #shop_pages {
+            margin-top: 50px;
+            background-color: #F9F9F9;
+        }
+
+        #inner_pages{
+            background-color: #F9F9F9;
+        }
+
+
+        #shop_pages .demo-item .item-inner {
+            padding-bottom: 123.7%;
+        }
+        #product_pages .demo-item .item-inner {
+            padding-bottom: 123.7%;
+        }
+        #inner_pages .demo-item .item-inner {
+            padding-bottom: 123.7%;
+        }
+
+        .grid-unknown2 {
+            text-rendering: optimizespeed;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            -webkit-align-content: flex-start;
+            -ms-flex-line-pack: start;
+            align-content: flex-start;
+            justify-content: space-between;
+            -webkit-justify-content: space-between
+        }
+
+        .grid-unknown2 .testimonial-item {
+            display: inline-block;
+            zoom: 1;
+            letter-spacing: normal;
+            word-spacing: normal;
+            vertical-align: top;
+            text-rendering: auto;
+            width: 33.33333%
+        }
+
+        .grid-unknown2 + p {
+            margin: 0;
+            text-align: center;
+            font-size: 16px;
+            padding-top: 50px
+        }
+
+        footer {
+            text-align: center;
+            position: relative;
+            background-image: url(images/footer-bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            padding-top: 50px;
+        }
+
+        footer p {
+            font-size: 32px;
+            margin: 0 0 40px;
+            color: #262626;
+            line-height: 1.4;
+        }
+
+        footer p i{
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            display: block;
+            padding-bottom: 10px;
+        }
+
+        footer a {
+            display: inline-block;
+            margin: 0 auto 70px;
+            font-size: 18px;
+            padding: 20px 50px;
+            font-weight: bold;
+            transition: all .3s;
+            border: 1px solid #979797;
+            line-height: 28px;
+        }
+
+        footer a:hover {
+            color: #fff;
+            background-color: #D25B5B;
+            border-color: #D25B5B;
+        }
+
+        footer address {
+            display: none;
+        }
+
+        .grid-unknown2 .feature-item {
+            display: inline-block;
+            zoom: 1;
+            letter-spacing: normal;
+            word-spacing: normal;
+            vertical-align: top;
+            text-rendering: auto;
+            width: 25%
+        }
+
+        .grid-unknown2 .feature-item-3, .grid-unknown2 .feature-item-2, .grid-unknown2 .feature-item-1 {
+            width: 50%
+        }
+
+
+        #features {
+            padding-top: 80px;
+            padding-bottom: 200px;
+            background-color: #F9F9F9;
+        }
+        .feature-row{
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+
+        }
+        .feature-row .col{
+            -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+            max-width: 25%;
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        .feature-item {
+            background-color: #ffffff;
+            border-radius: 5px;
+            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 45px 15px;
+            text-align: center;
+            margin-bottom: 30px;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+        }
+        .feature-item:hover {
+            -moz-transform: translateY(-5px);
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+        }
+        .grid-unknown .demo-item {
+            display: inline-block;
+            zoom: 1;
+            letter-spacing: normal;
+            word-spacing: normal;
+            vertical-align: top;
+            text-rendering: auto
+        }
+
+        nav.site-main-nav.is_stuck {
+            position: fixed;
+            width: 100vw !important;
+            top: 0;
+            z-index: 9;
+            background-color: #fff;
+            color: #fff;
+            left: 0;
+            padding: 0;
+        }
+
+        nav.site-main-nav.is_stuck ul.nav {
+            width: 1170px;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        nav.site-main-nav.is_stuck ul li{
+            padding: 25px 15px;
+        }
+
+
+        section#header_layout {
+            margin-top: 50px;
+        }
+
+        #header_layout .item-inner {
+            background-size: cover;
+        }
+        #header_layout .container {
+            width: 1200px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+
+        #features .container {
+            width: 1200px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        @media(max-width: 1500px){
+            .header__bg__wrap{
+                height: 50%;
+            }
+        }
+
+        @media(max-width: 1200px){
+            .container{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .site-main-nav a {
+                line-height: 46px;
+                font-size: 16px;
+            }
+            .site-main-nav ul li:last-child a {
+                line-height: 44px;
+                padding: 0 20px;
+                font-size: 12px;
+            }
+            .site-main-nav ul li,
+            nav.site-main-nav.is_stuck ul li{
+                padding: 15px;
+            }
+            .site-branding {
+                padding-top: 40px;
+            }
+            header#masthead .container {
+                min-height: 500px;
+            }
+            footer a {
+                font-size: 16px;
+                padding: 15px 40px;
+            }
+            .site-branding figure img {
+                width: 170px;
+            }
+            .site-branding figcaption {
+                font-size: 18px;
+                padding-top: 10px;
+            }
+            header#masthead .container {
+                background-size: 150px;
+            }
+            h2{
+                font-size: 36px;
+            }
+            .grid-4 .demo-item {
+                width: 33.33%;
+            }
+            footer p {
+                font-size: 24px;
+            }
+        }
+        @media(max-width: 800px){
+            header#masthead .container {
+                min-height: 400px;
+            }
+            .header__bg__wrap {
+                height: 30%;
+            }
+            h2,
+            #demo h2 {
+                font-size: 26px;
+            }
+            .feature-item p{
+                font-size: 13px;
+            }
+        }
+        @media(max-width: 600px){
+            .container {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .grid-4 .demo-item,
+            .grid-3 .demo-item {
+                width: 100%;
+            }
+            #inner_pages .container,
+            #blog_pages .container,
+            #product_pages .container,
+            #shop_pages .container {
+                display: block;
+            }
+            #inner_pages .row:nth-child(1),
+            #blog_pages .row:nth-child(1),
+            #product_pages .row:nth-child(1),
+            #shop_pages .row:nth-child(1) {
+                width: 100%;
+            }
+            .demo-item {
+                padding: 10px;
+            }
+            footer p {
+                font-size: 15px;
+            }
+
+            #features{
+                padding-bottom: 50px;
+            }
+            .site-main-nav{
+                text-align: center;
+            }
+            .site-main-nav a {
+                font-size: 13px;
+                line-height: 20px;
+            }
+            .site-main-nav ul li, nav.site-main-nav.is_stuck ul li {
+                padding: 20px 10px;
+            }
+            .site-main-nav ul li:last-child{
+                display: none;
+            }
+            .site-branding figcaption {
+                font-size: 12px;
+            }
+            .site-branding figure img {
+                width: 150px;
+            }
+            header#masthead .container {
+                min-height: 300px;
+                background-position: 90% 24%;
+            }
+        }
+        footer a{
+            display: none;
+        }
+
+nav.site-main-nav {
+    text-align: center;
+}
+footer{
+    overflow: hidden;
+}
+    </style>
+</head>
+<body class="site-loading">
+<div class="la-image-loading">
+    <div class="content">
+        <div class="la-loader spinner5"><div class="dot1"></div><div class="dot2"></div><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div><div class="cube1"></div><div class="cube2"></div><div class="cube3"></div><div class="cube4"></div></div>
+    </div>
+</div>
+<div id="page" class="site">
+    <div class="site-inner">
+        <header id="masthead" class="site-header">
+            <div class="container">
+                <div class="header-main clearfix">
+                    <nav class="site-main-nav">
+                        <ul class="nav">
+                            <li><a href="#demo">Demos</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Buy Now</a></li>
+                        </ul>
+                    </nav>
+                    <div class="site-branding">
+                        <a href="airi/index.html" rel="home">
+                            <figure class="logo--normal">
+                                <img src="images/logo.svg" alt="Airi - Clean, Minimal WooCommerce Theme"/>
+                                <figcaption class="screen-reader-text">Clean, Minimal eCommerce Bootstrap 4 Template</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__bg__wrap">
+                    <div class="header__bg header__bg-1"></div>
+                    <div class="header__bg header__bg-2"></div>
+                    <div class="header__bg header__bg-3"></div>
+                    <div class="header__bg header__bg-4"></div>
+                    <div class="header__bg header__bg-5"></div>
+                </div>
+            </div>
+        </header>
+        <main id="main">
+            <section id="demo">
+                <div class="container">
+                    <div class="row">
+                        <div class="small-container">
+                            <header><h2>20+ Homepage Layout</h2></header>
+                            <p>Airi provides 20+ pre-defined homepage layouts, focus on product. Easy to import and highly customizable. You can mix elements to create your own layout.</p>
+                        </div>
+                        <div class="small-container">
+                            <header><h3>11+ Fashion Demo</h3></header>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="grid-3">
+                            <div class="demo-item"><div class="item-inner" data-background="images/demo-01.jpg" style="background-image: url(images/demo-01.jpg)"><a target="_blank" href="airi/index.html"><span>Main Fashion 01</span></a></div><h3>Main Fashion 01</h3></div><div class="demo-item"><div class="item-inner" data-background="images/demo-02.jpg" style="background-image: url(images/demo-02.jpg)"><a target="_blank" href="airi/index-02.html"><span>Main Fashion 02</span></a></div><h3>Main Fashion 02</h3></div><div class="demo-item"><div class="item-inner" data-background="images/demo-03.jpg" style="background-image: url(images/demo-03.jpg)"><a target="_blank" href="airi/index-03.html"><span>Main Fashion 03</span></a></div><h3>Main Fashion 03</h3></div><div class="demo-item"><div class="item-inner" data-background="images/demo-04.jpg" style="background-image: url(images/demo-04.jpg)"><a target="_blank" href="airi/index-04.html"><span>Main Fashion 04</span></a></div><h3>Main Fashion 04</h3></div><div class="demo-item"><div class="item-inner" data-background="images/demo-05.jpg" style="background-image: url(images/demo-05.jpg)"><a target="_blank" href="airi/index-05.html"><span>Main Fashion 05</span></a></div><h3>Main Fashion 05</h3></div><div class="demo-item"><div class="item-inner" data-background="images/demo-06.jpg" style="background-image: url(images/demo-06.jpg)"><a target="_blank" href="airi/index-06.html"><span>Main Fashion 06</span></a></div><h3>Main Fashion 06</h3></div><div class="demo-item"><div class="item-inner" data-background="images/demo-07.jpg" style="background-image: url(images/demo-07.jpg)"><a target="_blank" href="airi/index-07.html"><span>Main Fashion 07</span></a></div><h3>Main Fashion 07</h3></div><div class="demo-item"><div class="item-inner" data-background="images/demo-08.jpg" style="background-image: url(images/demo-08.jpg)"><a target="_blank" href="airi/index-08.html"><span>Main Fashion 08</span></a></div><h3>Main Fashion 08</h3></div><div class="demo-item"><div class="item-inner" data-background="images/demo-09.jpg" style="background-image: url(images/demo-09.jpg)"><a target="_blank" href="airi/index-09.html"><span>Main Fashion 09</span></a></div><h3>Main Fashion 09</h3></div><div class="demo-item"><div class="item-inner" data-background="images/demo-10.jpg" style="background-image: url(images/demo-10.jpg)"><a target="_blank" href="airi/index-10.html"><span>Main Fashion 10</span></a></div><h3>Main Fashion 10</h3></div><div class="demo-item"><div class="item-inner" data-background="images/demo-11.jpg" style="background-image: url(images/demo-11.jpg)"><a target="_blank" href="airi/index-11.html"><span>Main Fashion 11</span></a></div><h3>Main Fashion 11</h3></div>                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="small-container margin-top-50">
+                            <header><h3>09+ Furniture Demo</h3></header>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="grid-3">
+                            <div class="demo-item"><div class="item-inner" data-background="images/demo-12.jpg" style="background-image: url(images/demo-12.jpg)"><a target="_blank" href="airi/index-12.html"><span>Main Furniture 01</span></a></div><h3>Main Furniture 01</h3></div><div class="demo-item"><div class="item-inner" data-background="images/demo-13.jpg" style="background-image: url(images/demo-13.jpg)"><a target="_blank" href="airi/index-13.html"><span>Main Furniture 02</span></a></div><h3>Main Furniture 02</h3></div><div class="demo-item"><div class="item-inner" data-background="images/demo-14.jpg" style="background-image: url(images/demo-14.jpg)"><a target="_blank" href="airi/index-14.html"><span>Main Furniture 03</span></a></div><h3>Main Furniture 03</h3></div><div class="demo-item"><div class="item-inner" data-background="images/demo-15.jpg" style="background-image: url(images/demo-15.jpg)"><a target="_blank" href="airi/index-15.html"><span>Main Furniture 04</span></a></div><h3>Main Furniture 04</h3></div><div class="demo-item"><div class="item-inner" data-background="images/demo-16.jpg" style="background-image: url(images/demo-16.jpg)"><a target="_blank" href="airi/index-16.html"><span>Main Furniture 05</span></a></div><h3>Main Furniture 05</h3></div><div class="demo-item"><div class="item-inner" data-background="images/demo-17.jpg" style="background-image: url(images/demo-17.jpg)"><a target="_blank" href="airi/index-17.html"><span>Main Furniture 06</span></a></div><h3>Main Furniture 06</h3></div><div class="demo-item"><div class="item-inner" data-background="images/demo-18.jpg" style="background-image: url(images/demo-18.jpg)"><a target="_blank" href="airi/index-18.html"><span>Main Furniture 07</span></a></div><h3>Main Furniture 07</h3></div><div class="demo-item"><div class="item-inner" data-background="images/demo-19.jpg" style="background-image: url(images/demo-19.jpg)"><a target="_blank" href="airi/index-19.html"><span>Main Furniture 08</span></a></div><h3>Main Furniture 08</h3></div><div class="demo-item"><div class="item-inner" data-background="images/demo-20.jpg" style="background-image: url(images/demo-20.jpg)"><a target="_blank" href="airi/index-20.html"><span>Main Furniture 09</span></a></div><h3>Main Furniture 09</h3></div>                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="shop_pages">
+                <div class="container">
+                    <div class="row">
+                        <div class="small-container">
+                            <header><h2>Unique Shop Layout</h2></header>
+                            <p>Airi makes it simple to setup and manage an online shop. Let’s start with a perfect shop layout.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="grid-4">
+                            <div class="demo-item demo-item-0"><div class="item-inner" data-background="images/shop-01.jpg"><a target="_blank" href="airi/shop-fullwidth.html"><span>Shop Fullwidth</span></a></div><h3>Shop Fullwidth</h3></div><div class="demo-item demo-item-1"><div class="item-inner" data-background="images/shop-02.jpg"><a target="_blank" href="airi/shop-sidebar.html"><span>Shop Sidebar</span></a></div><h3>Shop Sidebar</h3></div><div class="demo-item demo-item-2"><div class="item-inner" data-background="images/shop-03.jpg"><a target="_blank" href="airi/shop-instagram.html"><span>Shop Instagram</span></a></div><h3>Shop Instagram</h3></div><div class="demo-item demo-item-3"><div class="item-inner" data-background="images/shop-04.jpg"><a target="_blank" href="airi/shop-two-column.html"><span>Shop Two Columns</span></a></div><h3>Shop Two Columns</h3></div>                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="product_pages" class="clearfix">
+                <div class="container">
+                    <div class="row">
+                        <div class="small-container">
+                            <header><h2>Product Pages</h2></header>
+                            <p>Airi makes it simple to setup and manage an online shop. Let’s start with a perfect shop layout.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="grid-4">
+                            <div class="demo-item demo-item-0"><div class="item-inner" data-background="images/product-01.jpg"><a target="_blank" href="airi/product-details.html"><span>Simple 01</span></a></div><h3>Simple 01</h3></div><div class="demo-item demo-item-1"><div class="item-inner" data-background="images/product-02.jpg"><a target="_blank" href="airi/product-details-02.html"><span>Simple 02</span></a></div><h3>Simple 02</h3></div><div class="demo-item demo-item-2"><div class="item-inner" data-background="images/product-03.jpg"><a target="_blank" href="airi/product-details-sticky.html"><span>Sticky Info</span></a></div><h3>Sticky Info</h3></div><div class="demo-item demo-item-3"><div class="item-inner" data-background="images/product-04.jpg"><a target="_blank" href="airi/product-details-gallery.html"><span>Gallery Thumbnail</span></a></div><h3>Gallery Thumbnail</h3></div><div class="demo-item demo-item-4"><div class="item-inner" data-background="images/product-05.jpg"><a target="_blank" href="airi/product-details-sidebar.html"><span>With Sidebar</span></a></div><h3>With Sidebar</h3></div><div class="demo-item demo-item-5"><div class="item-inner" data-background="images/product-06.jpg"><a target="_blank" href="airi/product-details-grouped.html"><span>Grouped</span></a></div><h3>Grouped</h3></div><div class="demo-item demo-item-6"><div class="item-inner" data-background="images/product-07.jpg"><a target="_blank" href="airi/product-details-configurable.html"><span>Configurable</span></a></div><h3>Configurable</h3></div><div class="demo-item demo-item-7"><div class="item-inner" data-background="images/product-08.jpg"><a target="_blank" href="airi/product-details-affiliate.html"><span>Afilliate</span></a></div><h3>Afilliate</h3></div>                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="inner_pages" class="clearfix">
+                <div class="container">
+                    <div class="row">
+                        <div class="small-container">
+                            <header><h2>Creative Inner page</h2></header>
+                            <p>Each Airi demo is equipped with an accompanying set of beautiful, practical, and creative inner pages.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="grid-4">
+                            <div class="demo-item demo-item-0"><div class="item-inner" data-background="images/inner-01.jpg"><a target="_blank" href="airi/about-us.html"><span>About Us</span></a></div><h3>About Us</h3></div><div class="demo-item demo-item-1"><div class="item-inner" data-background="images/inner-02.jpg"><a target="_blank" href="airi/faqs-page.html"><span>FAQs & Help enter</span></a></div><h3>FAQs & Help enter</h3></div><div class="demo-item demo-item-2"><div class="item-inner" data-background="images/inner-03.jpg"><a target="_blank" href="airi/contact-us.html"><span>Contact Us</span></a></div><h3>Contact Us</h3></div><div class="demo-item demo-item-3"><div class="item-inner" data-background="images/inner-04.jpg"><a target="_blank" href="airi/coming-soon.html"><span>Coming Soon</span></a></div><h3>Coming Soon</h3></div>                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="features">
+                <div class="container">
+                    <div class="row-top">
+                        <div class="row">
+                            <div class="small-container">
+                                <header>
+                                    <h2>
+                                        Our Core Features
+                                    </h2>
+                                </header>
+                                <p>
+                                    Airi is built with innovative, powerful, and highly useful features and functionalities for easier website creation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-bottom">
+                        <div class="feature-row">
+                            <div class="col">
+                                <div class="feature-item">
+                                    <img src="images/bootstrap.png" alt="">
+                                    <h4>bootstrap v4</h4>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="feature-item">
+                                    <img src="images/sass.png" alt="">
+                                    <h4>Scss</h4>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="feature-item">
+                                    <img src="images/slider-revolution.png" alt="">
+                                    <h4>Revolution Slider</h4>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="feature-item">
+                                    <img src="images/performance.png" alt="">
+                                    <h4>Great Performance</h4>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="feature-item">
+                                    <img src="images/responsive.png" alt="">
+                                    <h4>fully responsive</h4>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="feature-item">
+                                    <img src="images/slick-carosel.png" alt="">
+                                    <h4>Slick Carousel</h4>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="feature-item">
+                                    <img src="images/fontawesome.png" alt="">
+                                    <h4>fontAwesome icon</h4>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="feature-item">
+                                    <img src="images/google-font.png" alt="">
+                                    <h4>google font</h4>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="feature-item">
+                                    <img src="images/mailchimp.png" alt="">
+                                    <h4>Mailchimp Subscribe</h4>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="feature-item">
+                                    <img src="images/mail.png" alt="">
+                                    <h4>ajax contact form</h4>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="feature-item">
+                                    <img src="images/w3c-validation.png" alt="">
+                                    <h4>W3C Validation</h4>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="feature-item">
+                                    <img src="images/box-wide.png" alt="">
+                                    <h4>Boxed and Wide Layout</h4>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="feature-item">
+                                    <img src="images/code.png" alt="">
+                                    <h4>Clean Code</h4>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="feature-item">
+                                    <img src="images/speed.png" alt="">
+                                    <h4>Speed Optimized</h4>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="feature-item">
+                                    <img src="images/document.png" alt="">
+                                    <h4>Well Documented</h4>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="feature-item">
+                                    <img src="images/slick.png" alt="">
+                                    <h4>24/7 Support</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+
+
+
+        <footer>
+            <div class="footer-bg"></div>
+            <div class="container">
+                <p>
+                    <i>Thank you for watching</i>
+                    <span>Purchase the <strong>Airi</strong> now and make<br/> everything easier</span>
+                </p>
+                <a target="_blank" href="#"><span>Purchase Now</span></a>
+            </div>
+            <address>&copy; 2018 Created by LaStudio</address>
+        </footer>
+
+        <div class="clearfix">
+            <div class="backtotop-container">
+                <a href="#page" class="btn-backtotop btn btn-secondary"><span class="fa-angle-up"></span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="wow.js"></script>
+<script>
+    var wow = new WOW(
+        {
+            boxClass:     'demo-item',      // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset:       0,          // distance to the element when triggering the animation (default is 0)
+            mobile:       true,       // trigger animations on mobile devices (default is true)
+            live:         true,       // act on asynchronously loaded content (default is true)
+            callback:     function(box) {
+                var background_src = box.childNodes[0].getAttribute('data-background');
+                if(background_src){
+                    box.childNodes[0].setAttribute('data-element-loaded', 'true');
+                    box.childNodes[0].style.backgroundImage = 'url('+background_src+')';
+                }
+                // the callback is fired every time an animation is started
+                // the argument that is passed in is the DOM node being animated
+            },
+            scrollContainer: null // optional scroll container selector, otherwise use window
+        }
+    );
+    wow.init();
+</script>
+<script>
+
+    (function($) {
+        "use strict";
+        var doc, win;
+
+        win = $(window);
+
+        doc = $(document);
+
+        $.fn.la_sticky = function(opts) {
+            var doc_height, elm, enable_bottoming, inner_scrolling, manual_spacer, offset_top, outer_width, parent_selector, recalc_every, sticky_class, win_height, _fn, _i, _len;
+            if (opts == null) {
+                opts = {};
+            }
+            sticky_class = opts.sticky_class, inner_scrolling = opts.inner_scrolling, recalc_every = opts.recalc_every, parent_selector = opts.parent, offset_top = opts.offset_top, manual_spacer = opts.spacer, enable_bottoming = opts.bottoming;
+            win_height = win.height();
+            doc_height = doc.height();
+            if (offset_top == null) {
+                offset_top = 0;
+            }
+            if (parent_selector == null) {
+                parent_selector = void 0;
+            }
+            if (inner_scrolling == null) {
+                inner_scrolling = true;
+            }
+            if (sticky_class == null) {
+                sticky_class = "is_stuck";
+            }
+            if (enable_bottoming == null) {
+                enable_bottoming = true;
+            }
+            outer_width = function(el) {
+                var computed, w, _el;
+                if (window.getComputedStyle) {
+                    _el = el[0];
+                    computed = window.getComputedStyle(el[0]);
+                    w = parseFloat(computed.getPropertyValue("width")) + parseFloat(computed.getPropertyValue("margin-left")) + parseFloat(computed.getPropertyValue("margin-right"));
+                    if (computed.getPropertyValue("box-sizing") !== "border-box") {
+                        w += parseFloat(computed.getPropertyValue("border-left-width")) + parseFloat(computed.getPropertyValue("border-right-width")) + parseFloat(computed.getPropertyValue("padding-left")) + parseFloat(computed.getPropertyValue("padding-right"));
+                    }
+                    return w;
+                } else {
+                    return el.outerWidth(true);
+                }
+            };
+            _fn = function(elm, padding_bottom, parent_top, parent_height, top, height, el_float, detached) {
+                var bottomed, detach, fixed, last_pos, last_scroll_height, offset, parent, recalc, recalc_and_tick, recalc_counter, spacer, tick;
+                if (elm.data("la_sticky")) {
+                    return;
+                }
+                elm.data("la_sticky", true);
+                last_scroll_height = doc_height;
+                parent = elm.parent();
+                if (parent_selector != null) {
+                    parent = parent.closest(parent_selector);
+                }
+                if (!parent.length) {
+                    throw "failed to find stick parent";
+                }
+                fixed = false;
+                bottomed = false;
+                spacer = manual_spacer != null ? manual_spacer && elm.closest(manual_spacer) : $("<div />");
+                if (spacer) {
+                    spacer.css('position', elm.css('position'));
+                }
+                recalc = function() {
+                    var border_top, padding_top, restore;
+                    if (detached) {
+                        return;
+                    }
+                    win_height = win.height();
+                    doc_height = doc.height();
+                    last_scroll_height = doc_height;
+                    border_top = parseInt(parent.css("border-top-width"), 10);
+                    padding_top = parseInt(parent.css("padding-top"), 10);
+                    padding_bottom = parseInt(parent.css("padding-bottom"), 10);
+                    parent_top = parent.offset().top + border_top + padding_top;
+                    parent_height = parent.height();
+                    if (fixed) {
+                        fixed = false;
+                        bottomed = false;
+                        if (manual_spacer == null) {
+                            elm.insertAfter(spacer);
+                            spacer.detach();
+                        }
+                        elm.css({
+                            position: "",
+                            top: "",
+                            width: "",
+                            bottom: ""
+                        }).removeClass(sticky_class);
+                        restore = true;
+                    }
+                    top = elm.offset().top - (parseInt(elm.css("margin-top"), 10) || 0) - offset_top;
+                    height = elm.outerHeight(true);
+                    el_float = elm.css("float");
+                    if (spacer) {
+                        spacer.css({
+                            width: outer_width(elm),
+                            height: height,
+                            display: elm.css("display"),
+                            "vertical-align": elm.css("vertical-align"),
+                            "float": el_float
+                        });
+                    }
+                    if (restore) {
+                        return tick();
+                    }
+                };
+                recalc();
+                if (height === parent_height) {
+                    return;
+                }
+                last_pos = void 0;
+                offset = offset_top;
+                recalc_counter = recalc_every;
+                tick = function() {
+                    var css, delta, recalced, scroll, will_bottom;
+                    if (detached) {
+                        return;
+                    }
+                    recalced = false;
+                    if (recalc_counter != null) {
+                        recalc_counter -= 1;
+                        if (recalc_counter <= 0) {
+                            recalc_counter = recalc_every;
+                            recalc();
+                            recalced = true;
+                        }
+                    }
+                    if (!recalced && doc_height !== last_scroll_height) {
+                        recalc();
+                        recalced = true;
+                    }
+                    scroll = win.scrollTop();
+                    if (last_pos != null) {
+                        delta = scroll - last_pos;
+                    }
+                    last_pos = scroll;
+                    if (fixed) {
+                        if (enable_bottoming) {
+                            will_bottom = scroll + height + offset > parent_height + parent_top;
+                            if (bottomed && !will_bottom) {
+                                bottomed = false;
+                                elm.css({
+                                    position: "fixed",
+                                    bottom: "",
+                                    top: offset
+                                }).trigger("la_sticky:unbottom");
+                            }
+                        }
+                        if (scroll <= top) {
+                            fixed = false;
+                            offset = offset_top;
+                            if (manual_spacer == null) {
+                                if (el_float === "left" || el_float === "right") {
+                                    elm.insertAfter(spacer);
+                                }
+                                spacer.detach();
+                            }
+                            css = {
+                                position: "",
+                                width: "",
+                                top: ""
+                            };
+                            elm.css(css).removeClass(sticky_class).trigger("la_sticky:unstick");
+                        }
+                        if (inner_scrolling) {
+                            if (height + offset_top > win_height) {
+                                if (!bottomed) {
+                                    offset -= delta;
+                                    offset = Math.max(win_height - height, offset);
+                                    offset = Math.min(offset_top, offset);
+                                    if (fixed) {
+                                        elm.css({
+                                            top: offset + "px"
+                                        });
+                                    }
+                                }
+                            }
+                        }
+                    } else {
+                        if (scroll > top) {
+                            fixed = true;
+                            css = {
+                                position: "fixed",
+                                top: offset
+                            };
+                            css.width = elm.css("box-sizing") === "border-box" ? elm.outerWidth() + "px" : elm.width() + "px";
+                            elm.css(css).addClass(sticky_class);
+                            if (manual_spacer == null) {
+                                elm.after(spacer);
+                                if (el_float === "left" || el_float === "right") {
+                                    spacer.append(elm);
+                                }
+                            }
+                            elm.trigger("la_sticky:stick");
+                        }
+                    }
+                    if (fixed && enable_bottoming) {
+                        if (will_bottom == null) {
+                            will_bottom = scroll + height + offset > parent_height + parent_top;
+                        }
+                        if (!bottomed && will_bottom) {
+                            bottomed = true;
+                            if (parent.css("position") === "static") {
+                                parent.css({
+                                    position: "relative"
+                                });
+                            }
+                            return elm.css({
+                                position: "absolute",
+                                bottom: padding_bottom,
+                                top: "auto"
+                            }).trigger("la_sticky:bottom");
+                        }
+                    }
+                };
+                recalc_and_tick = function() {
+                    recalc();
+                    return tick();
+                };
+                detach = function() {
+                    detached = true;
+                    win.off("touchmove", tick);
+                    win.off("scroll", tick);
+                    win.off("resize", recalc_and_tick);
+                    $(document.body).off("la_sticky:recalc", recalc_and_tick);
+                    elm.off("la_sticky:detach", detach);
+                    elm.removeData("la_sticky");
+                    elm.css({
+                        position: "",
+                        bottom: "",
+                        top: "",
+                        width: ""
+                    });
+                    parent.position("position", "");
+                    if (fixed) {
+                        if (manual_spacer == null) {
+                            if (el_float === "left" || el_float === "right") {
+                                elm.insertAfter(spacer);
+                            }
+                            spacer.remove();
+                        }
+                        return elm.removeClass(sticky_class);
+                    }
+                };
+                win.on("touchmove", tick);
+                win.on("scroll", tick);
+                win.on("resize", recalc_and_tick);
+                $(document.body).on("la_sticky:recalc", recalc_and_tick);
+                elm.on("la_sticky:detach", detach);
+                return setTimeout(tick, 0);
+            };
+            for (_i = 0, _len = this.length; _i < _len; _i++) {
+                elm = this[_i];
+                _fn($(elm));
+            }
+            return this;
+        };
+
+    }(jQuery));
+
+
+    (function ($) {
+        'use strict';
+
+        // SCROLLSPY CLASS DEFINITION
+        // ==========================
+
+        function ScrollSpy(element, options) {
+            this.$body          = $(document.body)
+            this.$scrollElement = $(element).is(document.body) ? $(window) : $(element)
+            this.options        = $.extend({}, ScrollSpy.DEFAULTS, options)
+            this.selector       = (this.options.target || '') + ' .nav li > a'
+            this.offsets        = []
+            this.targets        = []
+            this.activeTarget   = null
+            this.scrollHeight   = 0
+
+            this.$scrollElement.on('scroll.bs.scrollspy', $.proxy(this.process, this))
+            this.refresh()
+            this.process()
+        }
+
+        ScrollSpy.VERSION  = '3.3.7'
+
+        ScrollSpy.DEFAULTS = {
+            offset: 10
+        }
+
+        ScrollSpy.prototype.getScrollHeight = function () {
+            return this.$scrollElement[0].scrollHeight || Math.max(this.$body[0].scrollHeight, document.documentElement.scrollHeight)
+        }
+
+        ScrollSpy.prototype.refresh = function () {
+            var that          = this
+            var offsetMethod  = 'offset'
+            var offsetBase    = 0
+
+            this.offsets      = []
+            this.targets      = []
+            this.scrollHeight = this.getScrollHeight()
+
+            if (!$.isWindow(this.$scrollElement[0])) {
+                offsetMethod = 'position'
+                offsetBase   = this.$scrollElement.scrollTop()
+            }
+
+            this.$body
+                .find(this.selector)
+                .map(function () {
+                    var $el   = $(this)
+                    var href  = $el.data('target') || $el.attr('href')
+                    var $href = /^#./.test(href) && $(href)
+
+                    return ($href
+                        && $href.length
+                        && $href.is(':visible')
+                        && [[$href[offsetMethod]().top + offsetBase, href]]) || null
+                })
+                .sort(function (a, b) { return a[0] - b[0] })
+                .each(function () {
+                    that.offsets.push(this[0])
+                    that.targets.push(this[1])
+                })
+        }
+
+        ScrollSpy.prototype.process = function () {
+            var scrollTop    = this.$scrollElement.scrollTop() + this.options.offset
+            var scrollHeight = this.getScrollHeight()
+            var maxScroll    = this.options.offset + scrollHeight - this.$scrollElement.height()
+            var offsets      = this.offsets
+            var targets      = this.targets
+            var activeTarget = this.activeTarget
+            var i
+
+            if (this.scrollHeight != scrollHeight) {
+                this.refresh()
+            }
+
+            if (scrollTop >= maxScroll) {
+                return activeTarget != (i = targets[targets.length - 1]) && this.activate(i)
+            }
+
+            if (activeTarget && scrollTop < offsets[0]) {
+                this.activeTarget = null
+                return this.clear()
+            }
+
+            for (i = offsets.length; i--;) {
+                activeTarget != targets[i]
+                && scrollTop >= offsets[i]
+                && (offsets[i + 1] === undefined || scrollTop < offsets[i + 1])
+                && this.activate(targets[i])
+            }
+        }
+
+        ScrollSpy.prototype.activate = function (target) {
+            this.activeTarget = target
+
+            this.clear()
+
+            var selector = this.selector +
+                '[data-target="' + target + '"],' +
+                this.selector + '[href="' + target + '"]'
+
+            var active = $(selector)
+                .parents('li')
+                .addClass('active')
+
+            if (active.parent('.dropdown-menu').length) {
+                active = active
+                    .closest('li.dropdown')
+                    .addClass('active')
+            }
+
+            active.trigger('activate.bs.scrollspy')
+        }
+
+        ScrollSpy.prototype.clear = function () {
+            $(this.selector)
+                .parentsUntil(this.options.target, '.active')
+                .removeClass('active')
+        }
+
+
+        // SCROLLSPY PLUGIN DEFINITION
+        // ===========================
+
+        function Plugin(option) {
+            return this.each(function () {
+                var $this   = $(this)
+                var data    = $this.data('bs.scrollspy')
+                var options = typeof option == 'object' && option
+
+                if (!data) $this.data('bs.scrollspy', (data = new ScrollSpy(this, options)))
+                if (typeof option == 'string') data[option]()
+            })
+        }
+
+        var old = $.fn.scrollspy
+
+        $.fn.scrollspy             = Plugin
+        $.fn.scrollspy.Constructor = ScrollSpy
+
+
+        // SCROLLSPY NO CONFLICT
+        // =====================
+
+        $.fn.scrollspy.noConflict = function () {
+            $.fn.scrollspy = old
+            return this
+        }
+
+
+        // SCROLLSPY DATA-API
+        // ==================
+
+        $(window).on('load.bs.scrollspy.data-api', function () {
+            $('[data-spy="scroll"]').each(function () {
+                var $spy = $(this)
+                Plugin.call($spy, $spy.data())
+            })
+        })
+
+    }(jQuery));
+
+    (function($) {
+        "use strict";
+
+        function isInViewport(node) {
+            var rect = node.getBoundingClientRect()
+            return (
+                (rect.height > 0 || rect.width > 0) &&
+                rect.bottom >= 0 &&
+                rect.right >= 0 &&
+                rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+            )
+        }
+
+        $(function(){
+
+            $('body').removeClass('site-loading');
+
+            $(window).scroll(function() {
+                var scrolled = $(window).scrollTop()
+                $('.parallax').each(function(index, element) {
+                    var initY = $(this).offset().top
+                    var height = $(this).height()
+                    var endY  = initY + $(this).height()
+
+                    // Check if the element is in the viewport.
+                    var visible = isInViewport(this)
+                    if(visible) {
+                        var diff = scrolled - initY;
+                        if(diff < 0) diff = 0;
+                        var ratio = Math.round((diff / height) * 100);
+                        $(this).css('background-position','center ' + parseInt((ratio * 1.5)) + 'px');
+                        $('.header__bg__wrap').css('bottom', - parseInt((ratio * 1)) + 'px');
+                    }
+                })
+            })
+
+            $('.site-main-nav').la_sticky({
+                parent: $('#page')
+            });
+
+            $('body').scrollspy({
+                target: '.site-main-nav',
+                offset: 150
+            });
+
+            // Select all links with hashes
+            $('.site-main-nav a[href*="#"]')
+            // Remove links that don't actually link to anything
+                .not('[href="#"]')
+                .not('[href="#0"]')
+                .click(function(event) {
+                    // On-page links
+                    if (
+                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                        &&
+                        location.hostname == this.hostname
+                    ) {
+                        // Figure out element to scroll to
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        // Does a scroll target exist?
+                        if (target.length) {
+                            // Only prevent default if animation is actually gonna happen
+                            event.preventDefault();
+
+                            $(this).addClass('active');
+
+                            $('html, body').animate({
+                                scrollTop: target.offset().top - 80
+                            }, 1000);
+                        }
+                    }
+                });
+        })
+
+    })(jQuery);
+</script>
+</body>
+</html>
